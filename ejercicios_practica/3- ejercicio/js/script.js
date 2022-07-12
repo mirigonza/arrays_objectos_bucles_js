@@ -59,21 +59,21 @@ for(const tarjeta of pokemon){
     `
     <article class="${tarjeta.estiloClase}">
         <div class="header">
-    ${pokemonTipo.titulo}
+            ${tarjeta.titulo}
         </div>            
         <div>
-        <p id="descripcion">
-            ${tarjeta.descripcion}
+            <p id="descripcion">
+                ${tarjeta.descripcion}
         </p>
     </div>
     <img
-  src="${tarjeta.icono}"
-  class="icon-type"
-  alt="icon type"
-/>
-</article>
-`
+    src="${tarjeta.icono}"
+    class="icon-type"
+    alt="icon type"
+    />
+    </article>
+    `
 };
 
 const section = document.querySelector("section");
-section.innerHTML = accumudador
+section.innerHTML = accumudador;

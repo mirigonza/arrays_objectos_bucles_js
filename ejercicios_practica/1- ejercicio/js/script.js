@@ -83,7 +83,7 @@ if (ejercicio == 4) {
 
 // Ejercicios de práctica de objetos con bucle for of
 if (ejercicio == 5) {
-    const personas = [];
+    
     // Esta vez el array de personas comenzará vacio.
     // Realice un bucle que en cada iteración solicite
     // al usuario con prompt un nombre y apellido.
@@ -92,6 +92,17 @@ if (ejercicio == 5) {
     // El bucle deberá ejecutarse por 2 iteraciones.
     // Al terminarse el bucle (luego de ejecutarse todas las iteraciones)
     // deberá imprimir en consola el contenido del array "personas"
-    
+    const personas = [];
+    const ingreso = [1, 2, 3];
+    for (ingreso of personas){
+        personas.push(
+            {
+                "nombre": prompt("ingrese el nombre: "),
+                "apellido" : prompt("ingrese el apellido :")
+            }
+        )
 
+    }
+    console.log(personas)
 }
+
