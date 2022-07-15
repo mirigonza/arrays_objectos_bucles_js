@@ -42,3 +42,38 @@ en "section".
 */
 
 /* Comienza a escribir su código aquí */
+
+let accumudador = ""
+for(const pokemones of data){
+    accumudador +=
+    `
+    <article>
+        <img
+          src=${pokemones.thumbnail}
+          class="icon-type"
+          alt="icon type"
+        />
+        <p>
+        ${pokemones.name}
+        </p>
+      </article>
+      `
+}
+
+const section = document.querySelector("section");
+section.innerHTML = accumudador;
+
+const articulo = document.querySelectorAll("article");
+
+for (const article of articulo){
+ 
+article.addEventListener("mouseover", function () {
+    article.classList.add("planta");
+  });
+
+  article.addEventListener("mouseout", function () {
+    article.classList.remove("planta");
+  });
+
+};
+    
